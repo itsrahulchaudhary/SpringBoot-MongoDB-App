@@ -1,0 +1,52 @@
+1- Add Book
+
+curl --location --request POST 'http://localhost:8080/addBook' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "id": 12,
+    "name": "React",
+    "auther": "A C"
+}'
+
+2- Add List of Books
+
+curl --location --request POST 'http://localhost:8080/addBooks' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "id": 3,
+        "name": "SpringBoot",
+        "auther": "KK"
+    },
+    {
+        "id": 4,
+        "name": "Angular",
+        "auther": "AA"
+    }
+]'
+
+3- Get All Books
+
+curl --location --request GET 'http://localhost:8080/getAllBooks'
+
+4- Get Book by Id
+
+curl --location --request GET 'http://localhost:8080/getBookById/2'
+
+5- Get Book by Name
+
+curl --location --request GET 'http://localhost:8080/getBookByName/Java 8'
+
+6- Update Book
+
+curl --location --request PUT 'http://localhost:8080/updateBook' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "id": 2,
+    "name": "Java 8-features",
+    "auther": "R C C"
+}'
+
+7- Delete Book
+
+curl --location --request DELETE 'http://localhost:8080/delete/4'
