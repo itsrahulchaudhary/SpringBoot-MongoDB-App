@@ -7,11 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.book.api.entity.Book;
 import com.book.api.repository.BookRepository;
- 
 
 @Service
 public class BookService {
-	
 	
 	@Autowired
 	private BookRepository bookRepository;

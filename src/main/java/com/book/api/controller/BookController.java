@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.book.api.entity.Book;
 import com.book.api.service.BookService;
 
- 
-
 @RestController
 public class BookController {
 	
